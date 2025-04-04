@@ -419,3 +419,63 @@ hr {
 .Subscribe-btn:active {
   transform: scale(0.9);
 }
+
+footer{
+  background: #03344F;
+  color: #FFFFFF;
+  padding: 40px 0;
+}
+footer .rows{
+  align-items: normal;
+}
+.footer-col-1{
+  flex-basis: 29%;
+}
+.footer-col-1 h1{
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.footer-col-1 p{
+  font-size: 16px;
+  line-height: 35px;
+  padding-bottom: 20px;
+}
+.footer-col-1 i{
+  font-size: 40px;
+  color: #fff;
+  transition: 0.5s;
+  padding-right: 10px;
+}
+.footer-col-1 i:hover{
+  color: blue;
+}
+
+.footer-col{
+  flex-basis: 69%;
+}
+.footer-col h1{
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.footer-img{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-img img{
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
