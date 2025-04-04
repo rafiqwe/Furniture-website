@@ -1,13 +1,421 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+:root {
+  --font-color1: #666666;
+  --primary-color: #054c73;
+  --font-color: #333333;
 }
 
+body {
+  background: #ffffff;
+}
+.header {
+  background: #ffffff;
+}
+.container {
+  margin: auto;
+  width: 90%;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 122px;
+}
+.logo h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #054c73;
+}
 
+nav ul {
+  display: flex;
+  gap: 55px;
+}
+nav ul li a {
+  color: var(--font-color);
+  font-weight: 600;
+  transition: 0.2s;
+}
+nav ul li a:hover {
+  color: var(--font-color1);
+}
+.hero-section {
+  background-image: url("../Images/scandinavian.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 740px;
+  position: relative;
+}
+.discover {
+  width: 640px;
+  height: 430px;
+  background: #dfe9f4;
+  border-radius: 10px;
+  padding: 35px;
+  position: relative;
+  top: 150px;
+}
+.discover h4 {
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.discover h1 {
+  color: var(--primary-color);
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 65px;
+}
+.discover p {
+  color: var(--font-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 39px;
+  padding-top: 15px;
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.5s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 1;
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
 
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
 
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
 
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
 
+.button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.bottom-hero {
+  height: 150px;
+  background: #f2f5ff;
+  display: flex;
+  align-items: center;
+}
+.rows {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.cols {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.text h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding-bottom: 6px;
+}
+.text p {
+  font-size: 16px;
+  color: var(--font-color);
+}
+
+.top-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  flex-direction: column;
+  gap: 20px;
+}
+.top-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--font-color);
+}
+.top-text p {
+  font-size: 20px;
+  color: var(--font-color1);
+  text-align: center;
+  display: block;
+  width: 600px;
+}
+
+/* how to crop a image in css */
+.cropped-image {
+  width: 356px;
+  height: 434px;
+  background-image: url("../Images/scandinavian.png");
+  background-position: -123px -2px;
+  background-size: cover;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.inspiration {
+  background: #ffffff;
+  padding-bottom: 50px;
+}
+.inpi-colla {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.inpi-colla img:nth-child(1) {
+  border-radius: 55px 3px 3px 3px;
+}
+.inpi-colla img:nth-child(2) {
+  position: relative;
+  bottom: 30px;
+  border-radius: 4px;
+}
+.inpi-colla div {
+  border-radius: 3px 3px 60px 3px;
+}
+.beautify-section {
+  background: #f2f5ff;
+  height: 874px;
+}
+
+.beautify-col {
+  flex-basis: 45%;
+  position: relative;
+}
+.beautify-col h1 {
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--font-color);
+  padding-bottom: 20px;
+}
+.beautify-col p {
+  font-size: 20px;
+  color: var(--font-color);
+  padding-bottom: 20px;
+  line-height: 39px;
+}
+.cercal {
+  width: 372px;
+  height: 372px;
+  background: #09513b;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: 37%;
+}
+.beautify-col img {
+  position: relative;
+  top: 80px;
+  right: 45px;
+  border-radius: 50px 8px 50px 8px;
+}
+.browse-col {
+  flex-basis: 32%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.browse-col img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+hr {
+  color: #d7d6d6;
+}
+.works {
+  padding-bottom: 100px;
+}
+.works-col {
+  flex-basis: 32%;
+}
+.works-col img {
+  width: 100%;
+}
+.work-text {
+  text-align: center;
+}
+.work-text h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--font-color);
+}
+.work-text p {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--font-color1);
+}
+.join-our {
+  background: #f2f5ff;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.join-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--font-color);
+  padding-bottom: 10px;
+}
+.join-text p {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 39px;
+  padding-bottom: 20px;
+}
+/* ?? */
+
+/* From Uiverse.io by vinodjangid07 */
+.input-wrapper {
+  width: fit-content;
+  height: 45px;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  background-color: #292524;
+  margin: auto;
+}
+
+.icon {
+  width: 30px;
+  fill: rgb(255, 255, 255);
+  margin-left: 8px;
+  transition: all 0.3s;
+}
+.input {
+  max-width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  background-color: #292524;
+  color: white;
+  font-size: 1em;
+}
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+  -webkit-text-fill-color: #ffffff;
+}
+.Subscribe-btn {
+  height: 100%;
+  width: 95px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffffff;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+.arrow {
+  /* display: none; */
+  position: absolute;
+  margin-right: 150px;
+  transition: all 0.3s;
+}
+.input-wrapper:active .icon {
+  transform: scale(1.3);
+}
+.Subscribe-btn:hover {
+  color: white;
+}
+.Subscribe-btn:hover .arrow {
+  margin-right: 0;
+  animation: jello-vertical 0.9s both;
+  transform-origin: right;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.Subscribe-btn:active {
+  transform: scale(0.9);
+}
