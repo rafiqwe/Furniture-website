@@ -38,7 +38,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis.
           </p>
-          <button class="button">BUY NOW</button>
+          <button id="buyBtn" class="button">BUY NOW</button>
         </div>
       </div>
     </section>
@@ -98,7 +98,7 @@
             Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
-          <button class="button">Learn More</button>
+          <button id="learnBtn" class="button">Learn More</button>
         </div>
         <div class="beautify-col">
           <div class="cercal"></div>
@@ -174,7 +174,7 @@
           </p>
         </div>
         <div class="input-email">
-          <form>
+          <form onsubmit="handleSubmit">
             <!-- From Uiverse.io by vinodjangid07 -->
             <div class="input-wrapper">
               <svg
@@ -202,7 +202,7 @@
                 class="input"
                 placeholder="info@gmail.com"
               />
-              <button class="Subscribe-btn">
+              <button id="submit" class="Subscribe-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -243,5 +243,7 @@
         </div>
       </div>
     </footer>
+    <div class="notifications"></div>
+    <script src="index.js"></script>
   </body>
 </html>
