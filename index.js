@@ -2,18 +2,23 @@ const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
   button.addEventListener("click", (evt) => {
     evt.preventDefault();
-    console.log("button was clicked");
+    // All Website button default behevier disabled
   });
 });
+
+// Gmail sent Frontend to Backend functionality
+
 const submit = document.querySelector("#submit");
 const input = document.querySelector(".input");
 let from;
+// Create a gmail object
 let obj = {
   gmail: "",
 };
 const handleSubmit = (e) => {
   e.preventDefault();
   if (input.value === "") {
+    // if input.value is empty than alert is work;
     alert("Please enter your email address");
   } else {
     obj.gmail = input.value;
@@ -66,3 +71,10 @@ submit.onclick = function () {
   let gmail = obj.gmail;
   createToast(type, icon, title, text, gmail);
 };
+
+// Toggle Button Functionality
+const nav = document.querySelector("nav");
+const toggle = document.querySelector("#toggle-btn");
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});

@@ -1,0 +1,104 @@
+@media (max-width: 920px) {
+  .container{
+    width: 95%;
+  }
+  .header {
+    position: relative;
+  }
+
+  nav {
+    border-top: 1px solid #ddd;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    z-index: 1;
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 25px;
+
+  }
+  nav ul li:first-child{
+   margin-top: 25px;
+  }
+  .main-header {
+    height: 75px;
+  }
+  .discover {
+    width: 100%;
+    padding: 27px;
+    height: auto;
+  }
+  .discover h1 {
+    font-size: 40px;
+  }
+  .bottom-hero {
+    height: auto;
+    padding: 30px 0;
+  }
+  .bottom-hero .rows {
+    gap: 46px;
+    justify-content: center;
+  }
+  .top-text p{
+    width: auto;
+  }
+  .inpi-colla {
+    gap: 20px;
+  }
+  .inpi-colla img:nth-child(2){
+    bottom: 0;
+  }
+  .beautify-section{
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+  }
+  .beautify-col{
+    flex-basis: 100%;
+  }
+  .beautify-col img {
+    position: relative;
+    top: 45px;
+    width: 90%;
+    right: 0;
+}
+.top-text {
+    height: 33vh;
+} 
+.browse-col{
+    flex-basis: 100%;
+}
+.works-col {
+    flex-basis: 100%;
+}
+.work-text {
+    padding-bottom: 20px;
+}
+footer{
+    text-align: center;
+}
+.footer-col-1 {
+    flex-basis: 100%;
+}
+.footer-col {
+    flex-basis: 100%;
+}
+.footer-img{
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-img img {
+    width: 95%;
+}
+#toggle-btn{
+    display: block;
+}
+}

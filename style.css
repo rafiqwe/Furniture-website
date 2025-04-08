@@ -53,7 +53,7 @@ nav ul li a:hover {
   color: var(--font-color1);
 }
 .hero-section {
-  background-image: url("../Images/scandinavian.png");
+  background-image: url("Images/scandinavian.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,26 +63,32 @@ nav ul li a:hover {
 .discover {
   width: 640px;
   height: 430px;
-  background: #dfe9f4;
   border-radius: 20px;
   padding: 35px;
   position: relative;
   top: 150px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50%;
+  padding: 20px;
+  text-align: center;
 }
 .discover h4 {
-  color: var(--font-color);
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 20px;
 }
 .discover h1 {
-  color: var(--primary-color);
   font-size: 52px;
   font-weight: bold;
   line-height: 65px;
 }
 .discover p {
-  color: var(--font-color);
   font-size: 18px;
   font-weight: 500;
   line-height: 39px;
@@ -205,7 +211,7 @@ nav ul li a:hover {
 .cropped-image {
   width: 356px;
   height: 434px;
-  background-image: url("../Images/scandinavian.png");
+  background-image: url("Images/scandinavian.png");
   background-position: -123px -2px;
   background-size: cover;
   overflow: hidden;
@@ -560,4 +566,13 @@ button {
 .toast.info {
   --color: #3498db;
   background-image: linear-gradient(to right, #3498db55, #22242f 30%);
+}
+.active{
+  display: block;
+  height: 257px;
+}
+#toggle-btn {
+  font-size: 24px;
+  padding-right: 10px;
+  display: none;
 }
