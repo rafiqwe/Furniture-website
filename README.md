@@ -33,7 +33,7 @@ The website is fully responsive and adapts to:
 ## 🧑‍💻 Author
 
 - **MUHAMMAD RABBI**
-- [LinkedIn](www.linkedin.com/in/muhammad-rabbi-46aa46338)
+- [LinkedIn](https://www.linkedin.com/in/muhammad-rabbi-46aa46338)
 - [GitHub](rafiqwe)
 
 ## 📃 License
